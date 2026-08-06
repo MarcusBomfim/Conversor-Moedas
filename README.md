@@ -1,26 +1,25 @@
 # Conversor de Moedas
 
-Aplicação web para conversão entre moedas internacionais, desenvolvida com React e TypeScript. O projeto consulta uma cotação de referência, calcula o valor convertido e mantém no navegador um histórico das consultas recentes.
+Aplicação web para conversão de moedas internacionais, desenvolvida com React e TypeScript. Possui uma interface simples, responsiva e focada exclusivamente na conversão de valores.
 
 ## Funcionalidades
 
-- Conversão entre 10 moedas internacionais
-- Consulta de cotações pela Frankfurter API
-- Dados simulados de reserva quando a API estiver indisponível
-- Inversão rápida das moedas selecionadas
-- Histórico das seis conversões mais recentes
-- Reutilização e limpeza do histórico
+- Conversão entre diferentes moedas internacionais
+- Consulta de cotações atualizadas
+- Inversão rápida entre as moedas
 - Validação do valor informado
-- Interface responsiva e acessível
+- Cotação simulada caso a API esteja indisponível
+- Interface responsiva para computadores e celulares
+- Identificação da data e da fonte da cotação
 
-## Tecnologias
+## Tecnologias utilizadas
 
-- React 19
+- React
 - TypeScript
 - Vite
-- CSS organizado por responsabilidade
+- CSS
 - Fetch API
-- LocalStorage
+- Frankfurter API
 - ESLint
 
 ## Estrutura do projeto
@@ -28,40 +27,70 @@ Aplicação web para conversão entre moedas internacionais, desenvolvida com Re
 ```text
 src/
 ├── components/
-│   ├── converter/       # Componentes da conversão
-│   ├── layout/          # Cabeçalho e rodapé
-│   └── ui/              # Componentes de interface reutilizáveis
-├── constants/           # Moedas e taxas simuladas
-├── hooks/               # Estado da conversão e histórico
-├── pages/               # Páginas da aplicação
-├── services/            # Comunicação com a API
-├── styles/              # Estilos globais, componentes e responsividade
-├── types/               # Tipos TypeScript
-└── utils/               # Formatação e validação
+│   ├── converter/
+│   ├── layout/
+│   └── ui/
+├── constants/
+├── hooks/
+├── pages/
+├── services/
+├── styles/
+├── types/
+└── utils/
 ```
 
-## Como executar
+## Como executar o projeto
 
 É necessário ter o Node.js instalado.
 
+Clone o repositório:
+
+```bash
+git clone URL_DO_SEU_REPOSITORIO
+```
+
+Entre na pasta do projeto:
+
+```bash
+cd Conversor-Moedas
+```
+
+Instale as dependências:
+
 ```bash
 npm.cmd install
+```
+
+Execute o projeto:
+
+```bash
 npm.cmd run dev
 ```
 
-Abra o endereço exibido no terminal, normalmente `http://localhost:5173`.
+Acesse o endereço exibido no terminal, normalmente:
 
-## Gerar uma versão de produção
+```text
+http://localhost:5173
+```
+
+## Gerar versão de produção
 
 ```bash
 npm.cmd run build
+```
+
+Para visualizar a versão de produção:
+
+```bash
 npm.cmd run preview
 ```
 
-## Fonte das cotações
+## API utilizada
 
-O projeto utiliza o endpoint público da [Frankfurter API](https://frankfurter.dev/), que não exige chave. Se a consulta não puder ser concluída, a aplicação exibe uma cotação simulada claramente identificada. Os valores são apenas referências e não representam uma oferta comercial.
+O projeto utiliza a [Frankfurter API](https://frankfurter.dev/) para consultar taxas de câmbio de referência.
 
-## Armazenamento
+Caso a API esteja indisponível, a aplicação utiliza valores simulados e informa isso no resultado.
 
-Este projeto não usa banco de dados. As últimas conversões são salvas somente no `localStorage` do navegador do usuário.
+## Observação
+
+As cotações apresentadas são apenas valores de referência. Bancos, corretoras e outras instituições financeiras podem aplicar tarifas e valores diferentes.
