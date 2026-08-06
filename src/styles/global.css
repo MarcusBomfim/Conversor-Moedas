@@ -49,6 +49,18 @@ a {
   overflow: hidden;
 }
 
+.converter-page {
+  min-height: 100vh;
+  padding: 24px;
+  display: grid;
+  place-items: center;
+}
+
+.converter-only {
+  width: min(100%, 490px);
+  margin: 0;
+}
+
 main {
   width: min(calc(100% - 40px), var(--max-width));
   margin: 0 auto;

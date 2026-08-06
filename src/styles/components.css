@@ -163,19 +163,10 @@
 .converter-card {
   position: relative;
   padding: 36px;
-  border: 1px solid rgba(24, 35, 31, 0.1);
+  border: 1px solid rgba(37, 99, 235, 0.12);
   border-radius: var(--radius-lg);
   background: var(--paper);
-  box-shadow: var(--shadow);
-}
-
-.converter-card::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inset: 24px -24px -24px 24px;
-  border-radius: var(--radius-lg);
-  background: var(--blue);
+  box-shadow: 0 18px 48px rgba(37, 99, 235, 0.1);
 }
 
 .card-heading h2 {
