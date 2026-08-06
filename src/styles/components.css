@@ -21,7 +21,7 @@
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background: var(--green);
+  background: var(--blue);
   color: white;
   font-family: Georgia, serif;
   font-size: 1.35rem;
@@ -61,8 +61,8 @@
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background: #48aa70;
-  box-shadow: 0 0 0 5px rgba(72, 170, 112, 0.13);
+  background: #3b82f6;
+  box-shadow: 0 0 0 5px rgba(59, 130, 246, 0.14);
 }
 
 .hero {
@@ -78,7 +78,7 @@
 .section-heading span,
 .result-heading > span:first-child {
   display: inline-block;
-  color: var(--green);
+  color: var(--blue);
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.15em;
@@ -95,7 +95,7 @@
 }
 
 .hero-copy h1 em {
-  color: var(--green);
+  color: var(--blue);
   font-weight: 500;
 }
 
@@ -155,8 +155,8 @@
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background: var(--green-pale);
-  color: var(--green-dark);
+  background: var(--blue-pale);
+  color: var(--blue-dark);
   font-weight: 900;
 }
 
@@ -175,7 +175,7 @@
   z-index: -1;
   inset: 24px -24px -24px 24px;
   border-radius: var(--radius-lg);
-  background: var(--green);
+  background: var(--blue);
 }
 
 .card-heading h2 {
@@ -216,7 +216,7 @@
 }
 
 .amount-control > span {
-  color: var(--green);
+  color: var(--blue);
   font-family: Georgia, serif;
   font-size: 1.35rem;
 }
@@ -258,14 +258,14 @@
   border: 1px solid var(--line);
   border-radius: 50%;
   background: var(--paper);
-  color: var(--green);
+  color: var(--blue);
   font-size: 1.25rem;
   transition: transform 180ms ease, background 180ms ease;
 }
 
 .swap-button:hover {
   transform: rotate(180deg);
-  background: var(--green-pale);
+  background: var(--blue-pale);
 }
 
 .button {
@@ -282,13 +282,13 @@
 }
 
 .button-primary {
-  background: var(--green);
+  background: var(--blue);
   color: white;
 }
 
 .button-primary:not(:disabled):hover {
   transform: translateY(-2px);
-  background: var(--green-dark);
+  background: var(--blue-dark);
 }
 
 .convert-button {
@@ -329,7 +329,7 @@
   margin-top: 24px;
   padding: 23px;
   border-radius: 17px;
-  background: #ecf2e7;
+  background: #eaf1ff;
 }
 
 .result-heading,
@@ -344,7 +344,7 @@
   padding: 5px 9px;
   border-radius: 999px;
   background: rgba(31, 106, 87, 0.11);
-  color: var(--green-dark);
+  color: var(--blue-dark);
   font-size: 0.65rem;
   font-weight: 800;
 }
@@ -464,7 +464,7 @@
 
 .history-item:hover {
   transform: translateY(-2px);
-  border-color: var(--green);
+  border-color: var(--blue);
 }
 
 .history-item strong,
@@ -480,11 +480,11 @@
 }
 
 .history-arrow {
-  color: var(--green);
+  color: var(--blue);
 }
 
 .reuse-label {
-  color: var(--green);
+  color: var(--blue);
   font-size: 0.68rem;
   font-weight: 800;
 }
