@@ -1,0 +1,145 @@
+@media (max-width: 920px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 58px;
+  }
+
+  .hero-copy {
+    max-width: 680px;
+  }
+
+  .converter-card {
+    max-width: 650px;
+  }
+
+  .feature-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-strip article {
+    padding: 30px 10px;
+  }
+
+  .feature-strip article + article {
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .history-list,
+  .about-card {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 580px) {
+  main,
+  .site-header,
+  .site-footer {
+    width: min(calc(100% - 28px), var(--max-width));
+  }
+
+  .site-header {
+    min-height: 82px;
+  }
+
+  .api-status {
+    font-size: 0;
+  }
+
+  .hero {
+    padding: 48px 0 54px;
+    gap: 48px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(3rem, 17vw, 4.6rem);
+  }
+
+  .highlight {
+    padding: 18px 9px 18px 0;
+  }
+
+  .highlight + .highlight {
+    padding-left: 9px;
+  }
+
+  .highlight strong {
+    font-size: 1.35rem;
+  }
+
+  .converter-card {
+    padding: 25px 20px;
+  }
+
+  .converter-card::before {
+    inset: 14px -10px -14px 10px;
+  }
+
+  .currency-row {
+    grid-template-columns: 1fr;
+  }
+
+  .swap-button {
+    margin: -2px auto;
+    transform: rotate(90deg);
+  }
+
+  .swap-button:hover {
+    transform: rotate(270deg);
+  }
+
+  .result-heading,
+  .result-meta,
+  .section-heading,
+  .site-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .result-meta {
+    display: grid;
+  }
+
+  .history-section {
+    padding-top: 62px;
+  }
+
+  .history-list {
+    grid-template-columns: 1fr;
+  }
+
+  .history-item {
+    grid-template-columns: 1fr auto 1fr;
+  }
+
+  .reuse-label {
+    display: none;
+  }
+
+  .about-card {
+    margin: 60px 0;
+    padding: 34px 26px;
+  }
+
+  .site-footer {
+    gap: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
